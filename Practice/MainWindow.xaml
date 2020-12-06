@@ -13,9 +13,12 @@
         <TextBox x:Name="textBoxName" HorizontalAlignment="Left" Height="23" Margin="561,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="btnSave" Content="OK" HorizontalAlignment="Left" Margin="561,92,0,0" VerticalAlignment="Top" Width="75" Height="24" Click="btnSave_Click"/>
         <Label x:Name="lblName" Content="Namn" HorizontalAlignment="Left" Margin="561,34,0,0" VerticalAlignment="Top"/>
-        
-        
-        
+        <!-- UPPGIFT 3 -->
+        <Button x:Name="btnU3top" Content="Oklickad" HorizontalAlignment="Left" Margin="184,310,0,0" VerticalAlignment="Top" Width="52" Click="btnU3top_Click"/>
+        <Button x:Name="btnU3bottom" Content="Oklickad" HorizontalAlignment="Left" Margin="184,334,0,0" VerticalAlignment="Top" Width="52" Click="btnU3bottom_Click"/>
+
+
+
     </Grid>
     
 </Window>

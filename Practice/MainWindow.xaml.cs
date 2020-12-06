@@ -27,6 +27,8 @@ namespace Practice
             InitializeComponent();
         }
 
+        bool topButtonClicked = false;
+        bool bottomButtonClicked = false;
         private void btnMessage_Click(object sender, RoutedEventArgs e)
         {
             btnmsg.ShowMessage();
@@ -37,6 +39,36 @@ namespace Practice
             string name = textBoxName.Text;
             nmsg.ReturnNameMessage(name);
 
+        }
+
+        public void ClickedNotClickedTop()
+        {
+            if (topButtonClicked == true)
+            {
+                btnU3top.Content = "Klickad";
+                btnU3bottom.Content = "Oklickad";
+            }
+          
+        }
+        public void ClickedNotClickedBottom()
+        {
+            if (bottomButtonClicked == true)
+            {
+                btnU3bottom.Content = "Klickad";
+                btnU3top.Content = "Oklickad";
+            }
+        }
+
+        private void btnU3top_Click(object sender, RoutedEventArgs e)
+        {
+            topButtonClicked = true;
+            ClickedNotClickedTop();
+        }
+
+        private void btnU3bottom_Click(object sender, RoutedEventArgs e)
+        {
+            bottomButtonClicked = true;
+            ClickedNotClickedBottom();
         }
     }
 }
