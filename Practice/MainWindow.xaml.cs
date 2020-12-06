@@ -22,11 +22,12 @@ namespace Practice
     {
         public ButtonMessageClass btnmsg = new ButtonMessageClass();
         public NameMessageBoxClass nmsg = new NameMessageBoxClass();
+        public ButtonClickedNotClickedClass btnclick = new ButtonClickedNotClickedClass();
         public MainWindow()
         {
             InitializeComponent();
         }
-
+         
         bool topButtonClicked = false;
         bool bottomButtonClicked = false;
         private void btnMessage_Click(object sender, RoutedEventArgs e)
@@ -41,34 +42,22 @@ namespace Practice
 
         }
 
-        public void ClickedNotClickedTop()
-        {
-            if (topButtonClicked == true)
-            {
-                btnU3top.Content = "Klickad";
-                btnU3bottom.Content = "Oklickad";
-            }
-          
-        }
-        public void ClickedNotClickedBottom()
-        {
-            if (bottomButtonClicked == true)
-            {
-                btnU3bottom.Content = "Klickad";
-                btnU3top.Content = "Oklickad";
-            }
-        }
-
         private void btnU3top_Click(object sender, RoutedEventArgs e)
         {
+            bottomButtonClicked = false;
             topButtonClicked = true;
-            ClickedNotClickedTop();
+            btnU3top.Content = btnclick.ItIsClicked(topButtonClicked);
+            btnU3bottom.Content = btnclick.ItIsNotClicked(bottomButtonClicked);
+
         }
 
         private void btnU3bottom_Click(object sender, RoutedEventArgs e)
         {
+            topButtonClicked = false;
             bottomButtonClicked = true;
-            ClickedNotClickedBottom();
+            btnU3bottom.Content = btnclick.ItIsClicked(bottomButtonClicked);
+            btnU3top.Content = btnclick.ItIsNotClicked(topButtonClicked);
+
         }
     }
 }
