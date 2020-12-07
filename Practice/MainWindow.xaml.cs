@@ -59,5 +59,10 @@ namespace Practice
             btnU3top.Content = btnclick.ItIsNotClicked(topButtonClicked);
 
         }
+
+        private void btnShowPassword_Click(object sender, RoutedEventArgs e)
+        {
+            labelPassword.Visibility = Visibility.Visible;
+        }
     }
 }

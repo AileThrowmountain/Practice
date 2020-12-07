@@ -9,16 +9,19 @@
     <!-- UPPGIFT 1 -->
     <Grid>
         <Button x:Name="btnMessage" Content="Button" HorizontalAlignment="Left" Margin="49,36,0,0" VerticalAlignment="Top" Width="109" Height="41" Click="btnMessage_Click"/>
-       <!-- UPPGIFT 2 --> 
+        <!-- UPPGIFT 2 -->
         <TextBox x:Name="textBoxName" HorizontalAlignment="Left" Height="23" Margin="561,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="btnSave" Content="OK" HorizontalAlignment="Left" Margin="561,92,0,0" VerticalAlignment="Top" Width="75" Height="24" Click="btnSave_Click"/>
         <Label x:Name="lblName" Content="Namn" HorizontalAlignment="Left" Margin="561,34,0,0" VerticalAlignment="Top"/>
         <!-- UPPGIFT 3 -->
         <Button x:Name="btnU3top" Content="Oklickad" HorizontalAlignment="Left" Margin="184,310,0,0" VerticalAlignment="Top" Width="52" Click="btnU3top_Click"/>
         <Button x:Name="btnU3bottom" Content="Oklickad" HorizontalAlignment="Left" Margin="184,334,0,0" VerticalAlignment="Top" Width="52" Click="btnU3bottom_Click"/>
+        <!-- UPPGIFT 4 -->
+        <Button x:Name="btnShowPassword" Content="Visa lösenord" HorizontalAlignment="Left" Margin="10,371,0,0" VerticalAlignment="Top" Width="116" Height="39" Click="btnShowPassword_Click"/>
+        <Label x:Name="labelPassword" Content="Sesam Öppna dig!" HorizontalAlignment="Left" Margin="10,334,0,0" VerticalAlignment="Top" Width="116" Visibility="Hidden"/>
 
 
 
     </Grid>
-    
+
 </Window>
