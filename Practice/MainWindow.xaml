@@ -19,6 +19,14 @@
         <!-- UPPGIFT 4 -->
         <Button x:Name="btnShowPassword" Content="Visa lösenord" HorizontalAlignment="Left" Margin="10,371,0,0" VerticalAlignment="Top" Width="116" Height="39" Click="btnShowPassword_Click"/>
         <Label x:Name="labelPassword" Content="Sesam Öppna dig!" HorizontalAlignment="Left" Margin="10,334,0,0" VerticalAlignment="Top" Width="116" Visibility="Hidden"/>
+        <!-- UPPGIFT 5 -->
+        <Button x:Name="btnCalc" Content="Beräkna" HorizontalAlignment="Left" Margin="424,327,0,0" VerticalAlignment="Top" Width="58" Click="btnCalc_Click"/>
+        <TextBox x:Name="txtBxFirst" HorizontalAlignment="Left" Height="23" Margin="424,296,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="58"/>
+        <TextBox x:Name="txtBxSecond" HorizontalAlignment="Left" Height="23" Margin="500,296,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="58"/>
+        <Label x:Name="labelResult" Content="Summa:" HorizontalAlignment="Left" Margin="424,353,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labelResultShow" Content="" HorizontalAlignment="Left" Margin="483,353,0,0" VerticalAlignment="Top" Width="100"/>
+        <Label x:Name="labelPlus" Content="+" HorizontalAlignment="Left" Margin="482,292,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnClear" Content="Rensa" HorizontalAlignment="Left" Margin="424,383,0,0" VerticalAlignment="Top" Width="58" Background="white" Click="btnClear_Click"/>
 
 
 

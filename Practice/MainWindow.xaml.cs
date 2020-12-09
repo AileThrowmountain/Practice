@@ -23,11 +23,12 @@ namespace Practice
         public ButtonMessageClass btnmsg = new ButtonMessageClass();
         public NameMessageBoxClass nmsg = new NameMessageBoxClass();
         public ButtonClickedNotClickedClass btnclick = new ButtonClickedNotClickedClass();
+        public CalculateClass calcvariabel = new CalculateClass();
         public MainWindow()
         {
             InitializeComponent();
         }
-         
+
         bool topButtonClicked = false;
         bool bottomButtonClicked = false;
         private void btnMessage_Click(object sender, RoutedEventArgs e)
@@ -63,6 +64,30 @@ namespace Practice
         private void btnShowPassword_Click(object sender, RoutedEventArgs e)
         {
             labelPassword.Visibility = Visibility.Visible;
+        }
+
+        private void btnCalc_Click(object sender, RoutedEventArgs e)
+        {
+            calcvariabel.FirstNumber = int.Parse(txtBxFirst.Text);
+            calcvariabel.SecondNumber = int.Parse(txtBxSecond.Text);
+
+            labelResultShow.Content = calcvariabel.CalculateSum();
+        }
+
+        private void btnClear_Click(object sender, RoutedEventArgs e)
+        {
+            ClearTextBoxes();
+        }
+
+
+
+        //metoder
+        private void ClearTextBoxes()
+        {
+            txtBxFirst.Clear();
+            txtBxSecond.Clear();
+            labelResultShow.Content = "";
+           
         }
     }
 }
