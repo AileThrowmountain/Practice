@@ -68,10 +68,25 @@ namespace Practice
 
         private void btnCalc_Click(object sender, RoutedEventArgs e)
         {
-            calcvariabel.FirstNumber = int.Parse(txtBxFirst.Text);
-            calcvariabel.SecondNumber = int.Parse(txtBxSecond.Text);
-
-            labelResultShow.Content = calcvariabel.CalculateSum();
+            int numberOne;
+            int numberTwo;
+            if (int.TryParse(txtBxFirst.Text, out numberOne) && int.TryParse(txtBxSecond.Text, out numberTwo))
+            {
+                if (numberOne >= 0 && numberOne <= 9 || numberTwo >= 0 && numberTwo <= 9)
+                {
+                    calcvariabel.FirstNumber = int.Parse(txtBxFirst.Text);
+                    calcvariabel.SecondNumber = int.Parse(txtBxSecond.Text);
+                    labelResultShow.Content = calcvariabel.CalculateSum();
+                }
+                else
+                {
+                    MessageBox.Show("Skriv in heltal!");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Skriv in heltal!");
+            }
         }
 
         private void btnClear_Click(object sender, RoutedEventArgs e)
@@ -79,15 +94,15 @@ namespace Practice
             ClearTextBoxes();
         }
 
-
-
         //metoder
         private void ClearTextBoxes()
-        {
+        { 
             txtBxFirst.Clear();
             txtBxSecond.Clear();
             labelResultShow.Content = "";
-           
         }
+
+        
+
     }
 }
