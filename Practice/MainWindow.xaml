@@ -27,6 +27,23 @@
         <Label x:Name="labelResultShow" Content="" HorizontalAlignment="Left" Margin="483,353,0,0" VerticalAlignment="Top" Width="100"/>
         <Label x:Name="labelPlus" Content="+" HorizontalAlignment="Left" Margin="482,292,0,0" VerticalAlignment="Top"/>
         <Button x:Name="btnClear" Content="Rensa" HorizontalAlignment="Left" Margin="424,383,0,0" VerticalAlignment="Top" Width="58" Background="white" Click="btnClear_Click"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="123" Margin="400,283,0,0" VerticalAlignment="Top" Width="183"/>
+
+        <!-- UPPGIFT 6 -->
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="123" Margin="588,283,0,0" VerticalAlignment="Top" Width="195">
+            <Label x:Name="labelResultSum" Content="Resultat:" Margin="9.127,93.127,128.745,2.182"/>
+
+        </Border>
+        <TextBox x:Name="txtBxNumberOne" HorizontalAlignment="Left" Height="23" Margin="607,306,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="58"/>
+        <TextBox x:Name="txtBxNumberTwo" HorizontalAlignment="Left" Height="23" Margin="676,306,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="58"/>
+        <Button x:Name="btnAdd" Content="+" Margin="623,337,148.309,42.655" HorizontalAlignment="Center" VerticalAlignment="Center" Height="41" Width="22" FontWeight="Bold" FontSize="13" Click="btnAdd_Click" />
+        <Button x:Name="btnWithdraw" Content="-" Margin="648,337,123.309,42.655" HorizontalAlignment="Center" VerticalAlignment="Center" Height="41" Width="22" RenderTransformOrigin="1.676,-0.028" FontWeight="Bold" FontSize="13" Click="btnWithdraw_Click"/>
+        <Button x:Name="btnMultiply" Content="x" Margin="672,337,99.309,42.655" HorizontalAlignment="Center" VerticalAlignment="Center" Width="22" Height="41" FontWeight="Bold" Click="btnMultiply_Click"/>
+        <Button x:Name="btnDivide" Content="/" Margin="696,337,75.309,42.655" HorizontalAlignment="Center" VerticalAlignment="Center" Height="41" Width="22" FontWeight="Bold" Click="btnDivide_Click"/>
+        <Label x:Name="labelRoundedResult" Content="" HorizontalAlignment="Left" Margin="650,378,0,0" VerticalAlignment="Top" Width="82"/>
+        <Label x:Name="labelTalEtt" Content="Tal 1" HorizontalAlignment="Left" Margin="607,283,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labelTalTva" Content="Tal 2" HorizontalAlignment="Left" Margin="676,283,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnCleartwo" Content="Rensa" HorizontalAlignment="Left" Margin="737,383,0,0" VerticalAlignment="Top" Width="43" Background="white" Click="btnCleartwo_Click"/>
 
 
 

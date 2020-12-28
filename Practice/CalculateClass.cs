@@ -21,18 +21,36 @@ namespace Practice
             return Sum;
         }
 
-        //public void RightInputInTextbox(string number)
-        //{
-        //    bool isNumber;
-        //    if (isNumber = number.Select(c => char.IsDigit(c)).Sum(x => x ? 0 : 1) == 0)
-        //    {
-        //        CalculateSum();
-        //    }
-        //    else
-        //    {
-        //        MessageBox.Show("Skriv in heltal!");
-        //    }
-        //}
+        public decimal CalculateDiviation(decimal number, decimal anotherNumber)
+        {
+            decimal sum = 0;
+            sum = number / anotherNumber;
+            Math.Round(sum, 2);
+            return sum;
+        }
+
+        public decimal CalculateMultiplication(decimal number, decimal anotherNumber)
+        {
+            decimal sum = 0;
+            sum = number * anotherNumber;
+            Math.Round(sum, 2);
+            return sum;
+        }
+
+        public decimal CalculateAddition(decimal number, decimal anotherNumber)
+        {
+            decimal sum = 0;
+            sum = number + anotherNumber;
+            Math.Round(sum, 2);
+            return sum;
+        }
+        public decimal CalculateAbstraction(decimal number, decimal anotherNumber)
+        {
+            decimal sum = 0;
+            sum = number - anotherNumber;
+            Math.Round(sum, 2);
+            return sum;
+        }
 
     }
 }

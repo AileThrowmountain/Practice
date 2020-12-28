@@ -94,6 +94,13 @@ namespace Practice
             ClearTextBoxes();
         }
 
+
+
+
+
+
+
+
         //metoder
         private void ClearTextBoxes()
         { 
@@ -102,7 +109,31 @@ namespace Practice
             labelResultShow.Content = "";
         }
 
-        
+        private void btnCleartwo_Click(object sender, RoutedEventArgs e)
+        {
+            txtBxNumberOne.Clear();
+            txtBxNumberTwo.Clear();
+            labelRoundedResult.Content = "";
+        }
 
+        private void btnDivide_Click(object sender, RoutedEventArgs e)
+        {
+            labelRoundedResult.Content = calcvariabel.CalculateDiviation(decimal.Parse(txtBxNumberOne.Text), decimal.Parse(txtBxNumberTwo.Text));
+        }
+
+        private void btnAdd_Click(object sender, RoutedEventArgs e)
+        {
+            labelRoundedResult.Content = calcvariabel.CalculateAddition(decimal.Parse(txtBxNumberOne.Text), decimal.Parse(txtBxNumberTwo.Text));
+        }
+
+        private void btnWithdraw_Click(object sender, RoutedEventArgs e)
+        {
+            labelRoundedResult.Content = calcvariabel.CalculateAbstraction(decimal.Parse(txtBxNumberOne.Text), decimal.Parse(txtBxNumberTwo.Text));
+        }
+
+        private void btnMultiply_Click(object sender, RoutedEventArgs e)
+        {
+            labelRoundedResult.Content = calcvariabel.CalculateMultiplication(decimal.Parse(txtBxNumberOne.Text), decimal.Parse(txtBxNumberTwo.Text));
+        }
     }
 }
